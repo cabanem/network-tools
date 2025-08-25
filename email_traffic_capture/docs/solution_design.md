@@ -148,6 +148,9 @@ smtp-probe-YYYYMMDD_HHMMSS/
 - Remote execution mode for runner machines (invoke over SSH/WinRM)
 
 ## Proof
+This minimal sketch proves the concept:
+
+resolve &rarr; connect &rarr; STARTTLS &rarr; EHLO over TLS &rarr; grab cipher/cert
 ```python
 #!/usr/bin/env python3
 import socket, ssl, smtplib, time, json
@@ -210,5 +213,3 @@ if __name__ == "__main__":
     run()
 
 ```
-This sketch proves the concept:
-resolve &arr; connect &arr; STARTTLS &arr; EHLO over TLS &arr; grab  cipher/cert
