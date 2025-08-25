@@ -94,8 +94,8 @@ Normalize every probe into a classification. Each classification stores the load
 | `connect` | TCP timeout/reset/unreachable port |
 | `tls` | handshake failure, cert distrust/expired, TLS policy mismatch, SNI/ALPN mismatch |
 | `auth` | 534/535 class errors, XOAUTH2 token invalid/expired |
-| `smtp-policy` | 530/550/552 content/policy, “daily user sending limit exceeded”, attachment blocked.
-rate-limit – 421/4.7.x deferrals, greylisting/temporary failures |
+| `smtp-policy` | 530/550/552 content/policy, “daily user sending limit exceeded”, attachment blocked|
+| `rate-limit` | 421/4.7.x deferrals, greylisting/temporary failures |
 | `proxy` | explicit proxy demanded/seen, MITM cert, authentication required by proxy |
 | `ok` | uccess path to AUTH (or to MAIL FROM if --auth-test enabled) |
 | `unknown` | anything else (include last error line) |
